@@ -1,16 +1,16 @@
-const mysql = require('mysql');
+const mysql = require('mysql')
 
 const connection = mysql.createConnection({
     host: '127.0.0.1' || 'localhost',
     port: '3306',
     user: 'root',
     password: '',
-    databaseName: 'citations'
+    database: 'citation'
 })
 
 connection.connect((err) => {
-    if(err) throw err
-    console.log('the connection is successfully :)');
+    if (err) throw err
+    console.log('the connection was established successfully:)');
     
 })
 
